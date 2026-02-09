@@ -43,7 +43,7 @@ We employ a multi-faceted evaluation strategy focusing on three key pillars:
 ### **Results**
 We evaluated the models on an unseen Test Set. The comparison highlights the inherent trade-off between pure accuracy and model transparency.
 
-![Radar view](images/radar.png)
+<img src="images/radar.png" width="100">
 
 | Metric Category | Metric | Standard Model | B-cos Model |
 | :--- | :--- | :---: | :---: |
