@@ -23,7 +23,7 @@ We compare two approaches using the **HAM10000** dataset (7 diagnostic categorie
 
 ---
 ## **Evaluation**
----
+
 ### **Strategy & Metrics**
 
 To rigorously assess the performance of our models, we adopt the evaluation protocols established by the **ISIC 2018 Challenge (Task 3: Lesion Diagnosis)**. Given the high class imbalance of the HAM10000 dataset (where *Melanocytic Nevi* dominate), standard accuracy is an insufficient metric.
