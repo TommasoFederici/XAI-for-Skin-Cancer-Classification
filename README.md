@@ -43,6 +43,8 @@ We employ a multi-faceted evaluation strategy focusing on three key pillars:
 ### **Results**
 We evaluated the models on an unseen Test Set. The comparison highlights the inherent trade-off between pure accuracy and model transparency.
 
+![Radar view](images/radar.png)
+
 | Metric Category | Metric | Standard Model | B-cos Model |
 | :--- | :--- | :---: | :---: |
 | **Overall** | **Accuracy** | 85.63% | 80.24% |
@@ -62,14 +64,14 @@ We evaluated the models on an unseen Test Set. The comparison highlights the inh
 Unlike post-hoc methods (like Grad-CAM) which only highlight *where* the model is looking, **B-cosification** provides inherently faithful explanations that resemble feature segmentation.
 
 ### **Comparison: Standard vs. B-cosified**
-*(Insert your comparison image here, e.g., `images/comparison_heatmap.png`)*
+![Heatmap Comparison](images/ex_3_good.png)
 
 * **Standard Model (Grad-CAM):** Produces vague, blob-like heatmaps. It answers "Where?" but not "What?".
 * **B-cos Model:** Highlights specific morphological features (e.g., irregular borders, pigment networks) with pixel-level precision. It provides a verifiable medical rationale.
 
 
 ## **References**
-* **Dataset:** [HAM10000 (Human Against Machine)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)
+* **Dataset:** [HAM10000 (Human Against Machine)](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
 * **Method:** Arya et al., *"B-cosification: Transforming Deep Neural Networks to be Inherently Interpretable"* ([GitHub](https://github.com/shrebox/B-cosification))
 * **Architecture:** ResNet50 (He et al., 2016)
 
